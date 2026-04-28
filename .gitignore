@@ -1,0 +1,19 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+
+# Editor and system files
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Uploads and user data
+uploads/
+*.pdf
+
+# Python test cache
+.pytest_cache/

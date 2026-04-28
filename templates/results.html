@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinSight — Results</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0a0e17;
+    --surface: #111827;
+    --border: #1f2937;
+    --gold: #f59e0b;
+    --green: #10b981;
+    --red: #ef4444;
+    --text: #f9fafb;
+    --muted: #6b7280;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  .bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(245,158,11,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,158,11,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .page {
+    position: relative;
+    z-index: 1;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    background: linear-gradient(135deg, #fff 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .back-btn {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 0.5rem 1.2rem;
+    border-radius: 0.4rem;
+    font-family: 'Syne', sans-serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+
+  .back-btn:hover { color: var(--text); border-color: var(--gold); }
+
+  .summary-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .summary-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+  }
+
+  .summary-card .label {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+  }
+
+  .summary-card .amount {
+    font-family: 'DM Mono', monospace;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .amount.green { color: var(--green); }
+  .amount.red { color: var(--red); }
+  .amount.gold { color: var(--gold); }
+
+  .section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 1rem;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.75rem;
+  }
+
+  .categories {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+  }
+
+  .category-row {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+
+  .category-row:last-child { border-bottom: none; }
+  .category-row:hover { background: rgba(255,255,255,0.02); }
+
+  .cat-name {
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+
+  .cat-bar-wrap {
+    width: 160px;
+    height: 4px;
+    background: var(--border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .cat-bar {
+    height: 100%;
+    background: var(--gold);
+    border-radius: 2px;
+  }
+
+  .cat-amount {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    color: var(--red);
+    text-align: right;
+    min-width: 100px;
+  }
+
+  .transactions {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    overflow: hidden;
+  }
+
+  .txn-row {
+    display: grid;
+    grid-template-columns: 100px 1fr auto auto;
+    gap: 1rem;
+    align-items: center;
+    padding: 0.9rem 1.5rem;
+    border-bottom: 1px solid var(--border);
+    transition: background 0.15s;
+  }
+
+  .txn-row:last-child { border-bottom: none; }
+  .txn-row:hover { background: rgba(255,255,255,0.02); }
+
+  .txn-date {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+
+  .txn-merchant {
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+
+  .txn-category {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    background: var(--border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 1rem;
+  }
+
+  .txn-amount {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.9rem;
+    text-align: right;
+    min-width: 90px;
+  }
+
+  .txn-amount.credit { color: var(--green); }
+  .txn-amount.debit { color: var(--red); }
+
+  .footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(249,250,251,0.7);
+    font-size: 0.85rem;
+    font-family: 'DM Mono', monospace;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="page">
+
+  <header>
+    <div class="logo">FinSight</div>
+    <a href="/" class="back-btn">← New Analysis</a>
+  </header>
+
+  <div class="summary-grid">
+    <div class="summary-card">
+      <div class="label">Total Money In</div>
+      <div class="amount green">₹{{ "{:,.0f}".format(result.total_income) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Total Money Out</div>
+      <div class="amount red">₹{{ "{:,.0f}".format(result.total_spent) }}</div>
+    </div>
+    <div class="summary-card">
+      <div class="label">Net Position</div>
+      <div class="amount gold">₹{{ "{:,.0f}".format(result.total_income - result.total_spent) }}</div>
+    </div>
+  </div>
+
+  <div class="section-title">Spending by Category</div>
+  <div class="categories">
+    {% set max_val = result.by_category.values() | max %}
+    {% for category, amount in result.by_category.items() %}
+    <div class="category-row">
+      <div class="cat-name">{{ category }}</div>
+      <div class="cat-bar-wrap">
+        <div class="cat-bar" style="width: {{ (amount / max_val * 100) | int }}%"></div>
+      </div>
+      <div class="cat-amount">−₹{{ "{:,.0f}".format(amount) }}</div>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="section-title">Recent Transactions</div>
+  <div class="transactions">
+    {% for t in result.transactions[:50] %}
+    <div class="txn-row">
+      <div class="txn-date">{{ t.date }}</div>
+      <div class="txn-merchant">{{ t.merchant }}</div>
+      <div class="txn-category">{{ t.category }}</div>
+      {% if t.deposit > 0 %}
+      <div class="txn-amount credit">+₹{{ "{:,.0f}".format(t.deposit) }}</div>
+      {% else %}
+      <div class="txn-amount debit">−₹{{ "{:,.0f}".format(t.withdrawal) }}</div>
+      {% endif %}
+    </div>
+    {% endfor %}
+  </div>
+
+</div>
+<div class="footer">Anesu Masango</div>
+</body>
+</html>

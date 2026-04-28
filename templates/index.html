@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FinSight — Bank Statement Analyser</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg: #0a0e17;
+    --surface: #111827;
+    --border: #1f2937;
+    --gold: #f59e0b;
+    --green: #10b981;
+    --text: #f9fafb;
+    --muted: #6b7280;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Syne', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .bg-grid {
+    position: fixed;
+    inset: 0;
+    background-image: 
+      linear-gradient(rgba(245,158,11,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(245,158,11,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  .container {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 2rem;
+    max-width: 560px;
+    width: 100%;
+  }
+
+  .badge {
+    display: inline-block;
+    background: rgba(245,158,11,0.1);
+    border: 1px solid rgba(245,158,11,0.3);
+    color: var(--gold);
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    padding: 0.35rem 0.9rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.05;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, #fff 0%, #f59e0b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .subtitle {
+    color: var(--muted);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+  }
+
+  .upload-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 1rem;
+    padding: 2.5rem;
+  }
+
+  .drop-zone {
+    border: 2px dashed var(--border);
+    border-radius: 0.75rem;
+    padding: 2.5rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+  }
+
+  .drop-zone:hover {
+    border-color: var(--gold);
+    background: rgba(245,158,11,0.03);
+  }
+
+  .drop-zone input[type="file"] {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+  }
+
+  .drop-icon {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .drop-text {
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .drop-text span {
+    color: var(--gold);
+    font-weight: 600;
+  }
+
+  .file-types {
+    font-family: 'DM Mono', monospace;
+    font-size: 0.7rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  .btn {
+    width: 100%;
+    background: var(--gold);
+    color: #0a0e17;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    letter-spacing: 0.03em;
+  }
+
+  .btn:hover {
+    background: #fbbf24;
+    transform: translateY(-1px);
+  }
+
+  .banks {
+    margin-top: 1.5rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+    font-family: 'DM Mono', monospace;
+  }
+
+  .progress-panel {
+    margin-top: 1.5rem;
+    text-align: left;
+    background: rgba(255,255,255,0.03);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+  }
+
+  .progress-step {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-family: 'DM Mono', monospace;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .progress-step.active {
+    color: var(--text);
+  }
+
+  .progress-bullet {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    border: 1px solid var(--border);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+  }
+
+  .progress-step.active .progress-bullet {
+    background: var(--gold);
+    border-color: var(--gold);
+    color: #0a0e17;
+  }
+
+  .progress-message {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+  }
+
+  .hidden { display: none; }
+
+  .btn.loading {
+    opacity: 0.75;
+    cursor: wait;
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: rgba(249,250,251,0.7);
+    font-size: 0.85rem;
+    font-family: 'DM Mono', monospace;
+    pointer-events: none;
+  }
+</style>
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="container">
+  <div class="badge">● Financial Intelligence</div>
+  <h1>FinSight</h1>
+  <p class="subtitle">Upload your bank statement and get an instant breakdown of where your money is going.</p>
+  {% if error %}
+  <p style="color: #ef4444; font-size: 0.9rem; margin-bottom: 2rem;">{{ error }}</p>
+  {% endif %}
+  
+  <div class="upload-card">
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="drop-zone">
+        <input type="file" name="statement" accept=".pdf" required>
+        <div class="drop-icon">📄</div>
+        <div class="drop-text"><span>Choose a file</span> or drag it here</div>
+        <div class="file-types">Supports PDF bank statements</div>
+      </div>
+      <button type="submit" class="btn">Analyse Statement →</button>
+    </form>
+    <div class="banks">Works with Canara Bank · SBI · HDFC · ICICI · Axis</div>
+
+    <div id="progressPanel" class="progress-panel hidden">
+      <div class="progress-step" data-step="selected">
+        <span class="progress-bullet">1</span>
+        <span>Select file</span>
+      </div>
+      <div class="progress-step" data-step="uploading">
+        <span class="progress-bullet">2</span>
+        <span>Uploading</span>
+      </div>
+      <div class="progress-step" data-step="processing">
+        <span class="progress-bullet">3</span>
+        <span>Parsing & analysing</span>
+      </div>
+      <div class="progress-step" data-step="done">
+        <span class="progress-bullet">4</span>
+        <span>Showing results</span>
+      </div>
+      <div id="progressMessage" class="progress-message">Waiting for file selection.</div>
+    </div>
+  </div>
+</div>
+<div class="footer">Anesu Masango</div>
+<script>
+  const fileInput = document.querySelector('input[name="statement"]');
+  const form = document.querySelector('form');
+  const progressPanel = document.getElementById('progressPanel');
+  const progressMessage = document.getElementById('progressMessage');
+  const steps = Array.from(document.querySelectorAll('.progress-step'));
+  const submitButton = document.querySelector('.btn');
+
+  function setStep(stepKey, message) {
+    progressPanel.classList.remove('hidden');
+    steps.forEach(step => {
+      step.classList.toggle('active', step.dataset.step === stepKey);
+    });
+    progressMessage.textContent = message;
+  }
+
+  fileInput.addEventListener('change', () => {
+    if (!fileInput.files.length) return;
+    const name = fileInput.files[0].name;
+    setStep('selected', `Selected file: ${name}. Click Analyse Statement to continue.`);
+  });
+
+  form.addEventListener('submit', () => {
+    if (!fileInput.files.length) return;
+    setStep('uploading', `Uploading ${fileInput.files[0].name}...`);
+    submitButton.classList.add('loading');
+    submitButton.textContent = 'Processing...';
+    setTimeout(() => {
+      setStep('processing', 'Parsing PDF and analysing spending. This may take a few seconds.');
+    }, 150);
+  });
+</script>
+</body>
+</html>
