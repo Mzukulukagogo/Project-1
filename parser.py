@@ -78,9 +78,29 @@ def parse_statement(pdf_path):
             'merchant': merchant,
             'deposit': deposit,
             'withdrawal': withdrawal,
-            'balance': balance
+            'balance': balance,
+            'is_upi': header_line.startswith('UPI/')
         })
     
+    return transactions
+
+
+def parse_csv(file):
+    import csv
+
+    transactions = []
+    content = file.read().decode('utf-8').splitlines()
+    reader = csv.DictReader(content)
+
+    for row in reader:
+        transactions.append({
+            'date': row.get('date', ''),
+            'merchant': row.get('merchant', ''),
+            'deposit': float(row.get('deposit', 0) or 0),
+            'withdrawal': float(row.get('withdrawal', 0) or 0),
+            'balance': float(row.get('balance', 0) or 0)
+        })
+
     return transactions
 
 

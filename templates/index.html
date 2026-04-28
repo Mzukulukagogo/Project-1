@@ -237,12 +237,12 @@
   {% endif %}
   
   <div class="upload-card">
-    <form action="/upload" method="POST" enctype="multipart/form-data">
+    <form id="uploadForm" enctype="multipart/form-data">
       <div class="drop-zone">
-        <input type="file" name="statement" accept=".pdf" required>
+        <input type="file" name="statement" accept=".pdf,.csv" required>
         <div class="drop-icon">📄</div>
         <div class="drop-text"><span>Choose a file</span> or drag it here</div>
-        <div class="file-types">Supports PDF bank statements</div>
+        <div class="file-types">Supports PDF and CSV bank statements</div>
       </div>
       <button type="submit" class="btn">Analyse Statement →</button>
     </form>
@@ -292,7 +292,8 @@
     setStep('selected', `Selected file: ${name}. Click Analyse Statement to continue.`);
   });
 
-  form.addEventListener('submit', () => {
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
     if (!fileInput.files.length) return;
     setStep('uploading', `Uploading ${fileInput.files[0].name}...`);
     submitButton.classList.add('loading');
@@ -300,6 +301,20 @@
     setTimeout(() => {
       setStep('processing', 'Parsing PDF and analysing spending. This may take a few seconds.');
     }, 150);
+
+    const formData = new FormData();
+    formData.append('statement', fileInput.files[0]);
+
+    const response = await fetch('/upload', {
+      method: 'POST',
+      body: formData
+    });
+
+    const html = await response.text();
+
+    document.open();
+    document.write(html);
+    document.close();
   });
 </script>
 </body>

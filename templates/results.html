@@ -219,6 +219,32 @@
   .txn-amount.credit { color: var(--green); }
   .txn-amount.debit { color: var(--red); }
 
+  .insights-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .insights-card,
+  .chart-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+  }
+
+  .insights-card p {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 0.8rem;
+  }
+
+  .chart-container {
+    width: 100%;
+    min-height: 260px;
+  }
+
   .footer {
     position: fixed;
     bottom: 1rem;
@@ -256,6 +282,21 @@
     </div>
   </div>
 
+  <div class="insights-grid">
+    <div class="insights-card">
+      <div class="section-title">Spending insights</div>
+      {% for point in result.behavior_points %}
+      <p>{{ point }}</p>
+      {% endfor %}
+    </div>
+    <div class="chart-card">
+      <div class="section-title">Spending over time</div>
+      <div class="chart-container">
+        <canvas id="spendingTrendChart"></canvas>
+      </div>
+    </div>
+  </div>
+
   <div class="section-title">Spending by Category</div>
   <div class="categories">
     {% set max_val = result.by_category.values() | max %}
@@ -270,23 +311,89 @@
     {% endfor %}
   </div>
 
-  <div class="section-title">Recent Transactions</div>
-  <div class="transactions">
-    {% for t in result.transactions[:50] %}
-    <div class="txn-row">
-      <div class="txn-date">{{ t.date }}</div>
-      <div class="txn-merchant">{{ t.merchant }}</div>
-      <div class="txn-category">{{ t.category }}</div>
-      {% if t.deposit > 0 %}
-      <div class="txn-amount credit">+₹{{ "{:,.0f}".format(t.deposit) }}</div>
-      {% else %}
-      <div class="txn-amount debit">−₹{{ "{:,.0f}".format(t.withdrawal) }}</div>
-      {% endif %}
-    </div>
-    {% endfor %}
+<div class="section-title">Recent Transactions</div>
+<div class="transactions">
+  {% for t in transactions %}
+  <div class="txn-row">
+    <div class="txn-date">{{ t.date }}</div>
+    <div class="txn-merchant">{{ t.merchant }}</div>
+    <div class="txn-category">{{ t.category }}</div>
+    {% if t.deposit > 0 %}
+    <div class="txn-amount credit">+₹{{ "{:,.0f}".format(t.deposit) }}</div>
+    {% else %}
+    <div class="txn-amount debit">−₹{{ "{:,.0f}".format(t.withdrawal) }}</div>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+{% if page > 1 or transactions|length == 20 %}
+<div style="display:flex; justify-content:space-between; align-items:center; margin-top:1.5rem; padding-bottom:3rem;">
+  {% if page > 1 %}
+  <a href="/results?page={{ page - 1 }}" class="back-btn">← Previous</a>
+  {% else %}
+  <span></span>
+  {% endif %}
+
+  <span style="font-family:'DM Mono',monospace; font-size:0.8rem; color:var(--muted);">
+    Page {{ page }}
+  </span>
+
+  {% if transactions|length == 20 %}
+  <a href="/results?page={{ page + 1 }}" class="back-btn">Next →</a>
+  {% else %}
+  <span></span>
+  {% endif %}
+</div>
+{% endif %}
   </div>
 
 </div>
 <div class="footer">Anesu Masango</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const labels = {{ result.trend_dates | default([], true) | tojson | safe }};
+  const values = {{ result.trend_amounts | default([], true) | tojson | safe }};
+
+  const ctx = document.getElementById('spendingTrendChart');
+  if (ctx && labels && labels.length) {
+    new Chart(ctx, {
+      type: 'line',
+      data: {
+        labels,
+        datasets: [{
+          label: 'Daily spending',
+          data: values,
+          borderColor: '#f59e0b',
+          backgroundColor: 'rgba(245,158,11,0.18)',
+          fill: true,
+          tension: 0.3,
+          pointRadius: 3,
+          pointBackgroundColor: '#f59e0b',
+          pointBorderColor: '#fff'
+        }]
+      },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#cbd5e1' },
+            grid: { color: 'rgba(255,255,255,0.08)' }
+          },
+          x: {
+            ticks: { color: '#cbd5e1' },
+            grid: { display: false }
+          }
+        },
+        plugins: {
+          legend: { labels: { color: '#f9fafb' } },
+          tooltip: { enabled: true }
+        }
+      }
+    });
+  }
+</script>
 </body>
 </html>
