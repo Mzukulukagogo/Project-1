@@ -1,0 +1,3584 @@
+{
+  "DAILYOB": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 3298.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "31-08-2025"
+  },
+  "AMAZON": {
+    "frequency": 28,
+    "debit_count": 22,
+    "credit_count": 6,
+    "total_debit": 56402.8,
+    "total_credit": 3786.5,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "01-05-2026"
+  },
+  "TINOTE": {
+    "frequency": 24,
+    "debit_count": 16,
+    "credit_count": 8,
+    "total_debit": 1573.0,
+    "total_credit": 610.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "25-04-2026"
+  },
+  "MRS": {
+    "frequency": 52,
+    "debit_count": 52,
+    "credit_count": 0,
+    "total_debit": 2464.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "14-05-2026"
+  },
+  "FD REDEMPTION": {
+    "frequency": 50,
+    "debit_count": 0,
+    "credit_count": 50,
+    "total_debit": 0.0,
+    "total_credit": 181764.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": ""
+  },
+  "RETAIL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 60364.08,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-08-2025"
+  },
+  "1": {
+    "frequency": 48,
+    "debit_count": 48,
+    "credit_count": 0,
+    "total_debit": 298316.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-05-2026"
+  },
+  "AJIO": {
+    "frequency": 6,
+    "debit_count": 4,
+    "credit_count": 2,
+    "total_debit": 22601.62,
+    "total_credit": 1609.26,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "04-09-2025"
+  },
+  "APSRTC": {
+    "frequency": 56,
+    "debit_count": 56,
+    "credit_count": 0,
+    "total_debit": 2530.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-05-2026"
+  },
+  "BEVEN": {
+    "frequency": 28,
+    "debit_count": 20,
+    "credit_count": 8,
+    "total_debit": 7136.0,
+    "total_credit": 1300.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "05-05-2026"
+  },
+  "DURGAR": {
+    "frequency": 4,
+    "debit_count": 0,
+    "credit_count": 4,
+    "total_debit": 0.0,
+    "total_credit": 402.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": ""
+  },
+  "SMART": {
+    "frequency": 46,
+    "debit_count": 46,
+    "credit_count": 0,
+    "total_debit": 23423.64,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "08-04-2026"
+  },
+  "DESMO": {
+    "frequency": 56,
+    "debit_count": 32,
+    "credit_count": 24,
+    "total_debit": 74260.0,
+    "total_credit": 48804.4,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "01-05-2026"
+  },
+  "FLIPKAR": {
+    "frequency": 18,
+    "debit_count": 16,
+    "credit_count": 2,
+    "total_debit": 166264.0,
+    "total_credit": 106276.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "24-02-2026"
+  },
+  "POTLAK": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 12000.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "ANNUAL CHARGES": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1180.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-09-2025"
+  },
+  "APPLE": {
+    "frequency": 50,
+    "debit_count": 36,
+    "credit_count": 14,
+    "total_debit": 3816.0,
+    "total_credit": 858.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "09-05-2026"
+  },
+  "BONGAN": {
+    "frequency": 40,
+    "debit_count": 20,
+    "credit_count": 20,
+    "total_debit": 4042.0,
+    "total_credit": 6588.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "24-04-2026"
+  },
+  "MAKONI": {
+    "frequency": 18,
+    "debit_count": 14,
+    "credit_count": 4,
+    "total_debit": 3420.0,
+    "total_credit": 2200.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "08-05-2026"
+  },
+  "MHAKAY": {
+    "frequency": 34,
+    "debit_count": 18,
+    "credit_count": 16,
+    "total_debit": 12370.0,
+    "total_credit": 114620.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "17-05-2026"
+  },
+  "KOMMU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 158.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "07-09-2025"
+  },
+  "KAKINA": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 9558.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "01-12-2025"
+  },
+  "KAMMIL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 720.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "07-09-2025"
+  },
+  "KOLLU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 134.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "07-09-2025"
+  },
+  "MR": {
+    "frequency": 22,
+    "debit_count": 22,
+    "credit_count": 0,
+    "total_debit": 2106.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "23-04-2026"
+  },
+  "THOTA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-09-2025"
+  },
+  "ZOMATO": {
+    "frequency": 30,
+    "debit_count": 28,
+    "credit_count": 2,
+    "total_debit": 15865.4,
+    "total_credit": 765.48,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "10-05-2026"
+  },
+  "ETERNA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 618.9,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-09-2025"
+  },
+  "SHAIK": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 160.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "31-01-2026"
+  },
+  "RONGAL": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "10-09-2025"
+  },
+  "VUNDAV": {
+    "frequency": 12,
+    "debit_count": 12,
+    "credit_count": 0,
+    "total_debit": 4020.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "13-12-2025"
+  },
+  "F04B3F B96B": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 86.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "01-09-2025"
+  },
+  "PHONEP": {
+    "frequency": 4,
+    "debit_count": 0,
+    "credit_count": 4,
+    "total_debit": 0.0,
+    "total_credit": 1932.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": ""
+  },
+  "GOTTAL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 60.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-09-2025"
+  },
+  "TIRUMA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 250.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-09-2025"
+  },
+  "KAMBAM": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-09-2025"
+  },
+  "GUDIPA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 170.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-09-2025"
+  },
+  "WILFRE": {
+    "frequency": 8,
+    "debit_count": 2,
+    "credit_count": 6,
+    "total_debit": 800.0,
+    "total_credit": 2000.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "23-10-2025"
+  },
+  "PALLA": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 86.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "11-12-2025"
+  },
+  "DENZEL": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 30.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "VENKAT": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 2740.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "29-12-2025"
+  },
+  "BOORAY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "22-09-2025"
+  },
+  "NIGEL": {
+    "frequency": 20,
+    "debit_count": 16,
+    "credit_count": 4,
+    "total_debit": 3754.0,
+    "total_credit": 1200.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "23-01-2026"
+  },
+  "PHINEA": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 8000.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "PARSHO": {
+    "frequency": 42,
+    "debit_count": 26,
+    "credit_count": 16,
+    "total_debit": 13136.0,
+    "total_credit": 15466.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "20-03-2026"
+  },
+  "25 00 38 21": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 104474.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "24-09-2025"
+  },
+  "PAIDIKO": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 760.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "24-09-2025"
+  },
+  "CASH DEPOSIT": {
+    "frequency": 6,
+    "debit_count": 0,
+    "credit_count": 6,
+    "total_debit": 0.0,
+    "total_credit": 149000.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": ""
+  },
+  "MEDPLU": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 1401.42,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "05-12-2025"
+  },
+  "DYLAN": {
+    "frequency": 10,
+    "debit_count": 6,
+    "credit_count": 4,
+    "total_debit": 101600.0,
+    "total_credit": 1680.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "19-10-2025"
+  },
+  "YARASA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 110.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "25-09-2025"
+  },
+  "APOLLO": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 893.04,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "25-09-2025"
+  },
+  "25 TO 27": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "28-03-2026"
+  },
+  "TAX DEDUCTED": {
+    "frequency": 6,
+    "debit_count": 0,
+    "credit_count": 0,
+    "total_debit": 0.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": ""
+  },
+  "BASIS": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 182.06,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "15-03-2026"
+  },
+  "ONE97": {
+    "frequency": 4,
+    "debit_count": 0,
+    "credit_count": 4,
+    "total_debit": 0.0,
+    "total_credit": 32.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": ""
+  },
+  "SPOTIFY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 138.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "02-10-2025"
+  },
+  "RAPIDO": {
+    "frequency": 20,
+    "debit_count": 20,
+    "credit_count": 0,
+    "total_debit": 698.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "10-05-2026"
+  },
+  "0 1 00 35 17": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 64.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "02-10-2025"
+  },
+  "SALARY": {
+    "frequency": 8,
+    "debit_count": 0,
+    "credit_count": 8,
+    "total_debit": 0.0,
+    "total_credit": 108410.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": ""
+  },
+  "31BAA E8C45A C1F7D2D": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 54.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "03-10-2025"
+  },
+  "FARAI": {
+    "frequency": 8,
+    "debit_count": 6,
+    "credit_count": 2,
+    "total_debit": 4060.0,
+    "total_credit": 2.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "27-11-2025"
+  },
+  "MAHEND": {
+    "frequency": 20,
+    "debit_count": 20,
+    "credit_count": 0,
+    "total_debit": 26690.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "09-05-2026"
+  },
+  "TIRAGAT": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 286.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-10-2025"
+  },
+  "TADIWA": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 2880.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "06-10-2025"
+  },
+  "MEDISE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 364.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-10-2025"
+  },
+  "SHONHI": {
+    "frequency": 74,
+    "debit_count": 30,
+    "credit_count": 44,
+    "total_debit": 35486.0,
+    "total_credit": 37416.0,
+    "known_categories": {
+      "Peer Transfers": 1
+    },
+    "person_likelihood": 1.0,
+    "last_seen": "17-05-2026"
+  },
+  "KANCHI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 68.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-10-2025"
+  },
+  "JUSTINE": {
+    "frequency": 34,
+    "debit_count": 30,
+    "credit_count": 4,
+    "total_debit": 9716.0,
+    "total_credit": 8000.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "17-05-2026"
+  },
+  "F9AC26C8D DD0B5CE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 64.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "07-10-2025"
+  },
+  "SWAMI": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 420.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "22-03-2026"
+  },
+  "GALOREKAIN 08 10 25": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1899.98,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "08-10-2025"
+  },
+  "UPI AXI A2A2BFA40BFB8": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 453.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "10-10-2025"
+  },
+  "DEVARA": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 360.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "13-02-2026"
+  },
+  "KARREN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "11-10-2025"
+  },
+  "ALECK": {
+    "frequency": 16,
+    "debit_count": 8,
+    "credit_count": 8,
+    "total_debit": 2440.0,
+    "total_credit": 1060.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "01-12-2025"
+  },
+  "POTTI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 102.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-10-2025"
+  },
+  "JETTI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 98.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-10-2025"
+  },
+  "TANATS": {
+    "frequency": 16,
+    "debit_count": 6,
+    "credit_count": 10,
+    "total_debit": 777.56,
+    "total_credit": 2136.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "01-02-2026"
+  },
+  "BOJO": {
+    "frequency": 8,
+    "debit_count": 6,
+    "credit_count": 2,
+    "total_debit": 1000.0,
+    "total_credit": 600.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "20-10-2025"
+  },
+  "GOLLA": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 560.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "08-12-2025"
+  },
+  "KAKARA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "19-10-2025"
+  },
+  "NKOSIN": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 200.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "BODDU": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 280.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "19-10-2025"
+  },
+  "BANK": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "22-10-2025"
+  },
+  "PAILA": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 654.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "15-11-2025"
+  },
+  "SHEIKS": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 62.6,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "25-10-2025"
+  },
+  "CHARIT": {
+    "frequency": 68,
+    "debit_count": 24,
+    "credit_count": 44,
+    "total_debit": 21820.0,
+    "total_credit": 32714.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "10-05-2026"
+  },
+  "KOLA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 70.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "27-10-2025"
+  },
+  "OPENAI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "06-11-2025"
+  },
+  "ANESU": {
+    "frequency": 20,
+    "debit_count": 18,
+    "credit_count": 2,
+    "total_debit": 5656.0,
+    "total_credit": 64.24,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "06-04-2026"
+  },
+  "RELIANCERETAILLIMITEMUMB": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 10376.02,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "06-11-2025"
+  },
+  "TD INITIAL PAYIN": {
+    "frequency": 46,
+    "debit_count": 46,
+    "credit_count": 0,
+    "total_debit": 386000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "05-05-2026"
+  },
+  "REF": {
+    "frequency": 4,
+    "debit_count": 0,
+    "credit_count": 4,
+    "total_debit": 0.0,
+    "total_credit": 3021.52,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": ""
+  },
+  "MISS": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 260.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "29-01-2026"
+  },
+  "TINASHE": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 40.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "YBL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-11-2025"
+  },
+  "BRUCE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-11-2025"
+  },
+  "8C73B17FE7DE6C F F7": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 44.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "17-11-2025"
+  },
+  "27 11 DCA9D47D1F FBBFC7A 00 3 63": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 10.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "3/27/11"
+  },
+  "INOX": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 3648.48,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "15-02-2026"
+  },
+  "MAKUR": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 573.56,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "14-02-2026"
+  },
+  "DE4E2ED00C5BD66E2A36": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 32.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "07-11-2025"
+  },
+  "D2E3F3AD B D2F9": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 82.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "28-11-2025"
+  },
+  "BINDU": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 2480.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "20-02-2026"
+  },
+  "MEESHO": {
+    "frequency": 6,
+    "debit_count": 0,
+    "credit_count": 6,
+    "total_debit": 0.0,
+    "total_credit": 1356.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": ""
+  },
+  "KUDZAI": {
+    "frequency": 10,
+    "debit_count": 10,
+    "credit_count": 0,
+    "total_debit": 3130.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "14-02-2026"
+  },
+  "NAKKA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "07-12-2025"
+  },
+  "UPI AXID43ADE36D38E FB7": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 284.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "07-12-2025"
+  },
+  "KONDEP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-12-2025"
+  },
+  "RELANG": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 8000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-12-2025"
+  },
+  "FF4E4D A28CFB A": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 54.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-12-2025"
+  },
+  "SAI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 170.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-12-2025"
+  },
+  "DIMMAL": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 246.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "10-12-2025"
+  },
+  "ROTARY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4700.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "10-12-2025"
+  },
+  "ULLAMP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 106.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-12-2025"
+  },
+  "VASIRE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-12-2025"
+  },
+  "AIRTEL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 44.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "10-12-2025"
+  },
+  "MAKEMY": {
+    "frequency": 18,
+    "debit_count": 14,
+    "credit_count": 4,
+    "total_debit": 24714.2,
+    "total_credit": 1630.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "09-05-2026"
+  },
+  "AYUSMA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 70.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-12-2025"
+  },
+  "MOHAM": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 66.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-12-2025"
+  },
+  "ADITYA": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 3200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "16-02-2026"
+  },
+  "6AB9C43B7E B0C04E6E19": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 98.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "14-12-2025"
+  },
+  "15 12 BC73A CF B2D9BE 00 1 52": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "2/15/12"
+  },
+  "KORUPA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 224.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "19-12-2025"
+  },
+  "MUSIRE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 70.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "25-12-2025"
+  },
+  "BHADRA": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 88.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "25-12-2025"
+  },
+  "BLINKIT": {
+    "frequency": 24,
+    "debit_count": 24,
+    "credit_count": 0,
+    "total_debit": 9232.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "21-02-2026"
+  },
+  "RAZORP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1499.98,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "25-12-2025"
+  },
+  "BATTA": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 330.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "L R": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 710.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "26-12-2025"
+  },
+  "VISHAL": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 8000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "11-01-2026"
+  },
+  "SUREDD": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 60.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "27-12-2025"
+  },
+  "PULUGU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "27-12-2025"
+  },
+  "CHITIKE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 46.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "27-12-2025"
+  },
+  "INDIGO": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 22102.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-01-2026"
+  },
+  "FREEZIN": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 252.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "28-12-2025"
+  },
+  "TALLURI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "28-12-2025"
+  },
+  "GORAPA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 130.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "28-12-2025"
+  },
+  "FRESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2016.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "28-12-2025"
+  },
+  "ATTILI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "28-12-2025"
+  },
+  "KUDAK": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 300.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "28-12-2025"
+  },
+  "KUNIRE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 240.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "29-12-2025"
+  },
+  "MOHIT": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 8000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "30-12-2025"
+  },
+  "CC FB75D7EFA9A C1": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 26.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "30-12-2025"
+  },
+  "FD21F1AE6E71D D B7E": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 28.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "30-12-2025"
+  },
+  "IMPS": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2598.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "30-12-2025"
+  },
+  "SC": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 7.08,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "30-12-2025"
+  },
+  "UPI AXISWC79EBAAAAA A": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1346.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "30-12-2025"
+  },
+  "INCOME": {
+    "frequency": 30,
+    "debit_count": 0,
+    "credit_count": 30,
+    "total_debit": 0.0,
+    "total_credit": 486430.68,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": ""
+  },
+  "KUNAL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 246.18,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-12-2025"
+  },
+  "CONNAU": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 873.6,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "31-12-2025"
+  },
+  "AIRBNB": {
+    "frequency": 6,
+    "debit_count": 6,
+    "credit_count": 0,
+    "total_debit": 53170.6,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "02-01-2026"
+  },
+  "VISHNU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 259.46,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "31-12-2025"
+  },
+  "ZUDIO": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 10716.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "31-12-2025"
+  },
+  "DOMINO": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 3161.18,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "07-02-2026"
+  },
+  "IVY": {
+    "frequency": 22,
+    "debit_count": 6,
+    "credit_count": 16,
+    "total_debit": 2700.0,
+    "total_credit": 5720.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "19-04-2026"
+  },
+  "LIVEYOU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4012.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "31-12-2025"
+  },
+  "PUSHPE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 405.04,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-12-2025"
+  },
+  "KITAB": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 127.94,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "RAMAW": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 978.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "MUKESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 306.54,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "NATION": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "MANOJ": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 577.28,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "MD": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 400.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "ANIL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 180.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "SUBODH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 60.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "SHIVAM": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 900.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-01-2026"
+  },
+  "PVR": {
+    "frequency": 8,
+    "debit_count": 8,
+    "credit_count": 0,
+    "total_debit": 4669.32,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-05-2026"
+  },
+  "LOKESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 323.36,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "02-01-2026"
+  },
+  "MINISTR": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "02-01-2026"
+  },
+  "DEEPAK": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 671.78,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "02-01-2026"
+  },
+  "UBER": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 650.7,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "02-01-2026"
+  },
+  "VIKAS": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 300.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "02-01-2026"
+  },
+  "SANDEE": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 30000.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "DHARM": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-01-2026"
+  },
+  "PARVEE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1310.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-01-2026"
+  },
+  "CHANDE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 600.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-01-2026"
+  },
+  "DWARIK": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-01-2026"
+  },
+  "COLLECTION SEP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "04-01-2026"
+  },
+  "ANTONY": {
+    "frequency": 6,
+    "debit_count": 4,
+    "credit_count": 2,
+    "total_debit": 2880.0,
+    "total_credit": 1740.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "14-01-2026"
+  },
+  "UPI AXISWC A6CF8FD57B9": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 460.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "06-01-2026"
+  },
+  "SIDHAR": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "07-01-2026"
+  },
+  "UPI AXISWC89AE8C D": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 687.02,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "07-01-2026"
+  },
+  "TRAVELFOODSERVICEDELHIN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1018.5,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "07-01-2026"
+  },
+  "VENDIFY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 18.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "07-01-2026"
+  },
+  "HMSHOSTSERVICESINDIBANG": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1079.4,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "07-01-2026"
+  },
+  "ABDUL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1160.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "WONDE": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 3562.4,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "09-01-2026"
+  },
+  "WINSTO": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1258.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "KASHIA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1560.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "EALROY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "ANEESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "SUDHIR": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 5000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "MADON": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 800.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "VINOY T": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "08-01-2026"
+  },
+  "ASANGEETASILKSERNAKULA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 3000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "ARCHAE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 10.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "IRFAN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1400.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "RENEES": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 9800.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "10-01-2026"
+  },
+  "SMOKECULTUREERNAKULAM": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2794.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "RAJEND": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 736.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-01-2026"
+  },
+  "SHAJI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 794.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-01-2026"
+  },
+  "C3": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1786.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-01-2026"
+  },
+  "WIND": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 500.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "09-01-2026"
+  },
+  "A F92AFF0D A0": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-01-2026"
+  },
+  "RAHENA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 140.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-01-2026"
+  },
+  "SHINE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 786.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-01-2026"
+  },
+  "STAYFL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 5544.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-01-2026"
+  },
+  "KERALA": {
+    "frequency": 8,
+    "debit_count": 8,
+    "credit_count": 0,
+    "total_debit": 1090.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "12-01-2026"
+  },
+  "INDIAN": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 6214.4,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "12-01-2026"
+  },
+  "FOOD": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 90.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "10-01-2026"
+  },
+  "SAHLUD": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1066.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-01-2026"
+  },
+  "PRASAT": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 740.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-01-2026"
+  },
+  "KRISHN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 258.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-01-2026"
+  },
+  "RASHID": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1180.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "10-01-2026"
+  },
+  "C41A7BA F4D2BDB6DA8": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 94.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "11-01-2026"
+  },
+  "UPI F01 09 01 20": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4450.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "11-01-2026"
+  },
+  "ARUNKU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1600.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-01-2026"
+  },
+  "LATHA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 240.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-01-2026"
+  },
+  "RAKESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 10.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-01-2026"
+  },
+  "SUNDER": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-01-2026"
+  },
+  "TRATTO": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 15500.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "14-01-2026"
+  },
+  "AMAL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "13-01-2026"
+  },
+  "SASI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 3000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "13-01-2026"
+  },
+  "ASSISTA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 60.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "13-01-2026"
+  },
+  "NAVEEN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 3000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "13-01-2026"
+  },
+  "STANLY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-01-2026"
+  },
+  "SEMEER": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 300.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-01-2026"
+  },
+  "KFC2ERNAKULAMKEIN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 112.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "14-01-2026"
+  },
+  "14 01 26 22 23 56": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1360.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "14-01-2026"
+  },
+  "PAXINNOVATIONICTSERVBAN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "15-01-2026"
+  },
+  "CAMPAH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "15-01-2026"
+  },
+  "MANEPA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "15-01-2026"
+  },
+  "BUSH": {
+    "frequency": 12,
+    "debit_count": 6,
+    "credit_count": 6,
+    "total_debit": 2000.0,
+    "total_credit": 2000.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "20-02-2026"
+  },
+  "PEETHA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "17-01-2026"
+  },
+  "GOSALA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 68.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "17-01-2026"
+  },
+  "KIRAN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 64.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "17-01-2026"
+  },
+  "ANGADA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 112.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "17-01-2026"
+  },
+  "TWENTY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1072.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "17-01-2026"
+  },
+  "PINAPO": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 46.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "17-01-2026"
+  },
+  "KANCHU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "19-01-2026"
+  },
+  "EMMAN": {
+    "frequency": 16,
+    "debit_count": 16,
+    "credit_count": 0,
+    "total_debit": 3946.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "13-02-2026"
+  },
+  "ADHISRI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 320.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "21-01-2026"
+  },
+  "JAGIMO": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "21-01-2026"
+  },
+  "BENDA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 280.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "21-01-2026"
+  },
+  "KOPPIS": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 10.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "22-01-2026"
+  },
+  "DD C4A F": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 90.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "23-01-2026"
+  },
+  "UPI AXISWC3CE20FBAE6A": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 4000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "23-01-2026"
+  },
+  "PAMU": {
+    "frequency": 10,
+    "debit_count": 10,
+    "credit_count": 0,
+    "total_debit": 1800.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "13-02-2026"
+  },
+  "BOOKM": {
+    "frequency": 6,
+    "debit_count": 4,
+    "credit_count": 2,
+    "total_debit": 1906.48,
+    "total_credit": 600.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "24-01-2026"
+  },
+  "PENKE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "24-01-2026"
+  },
+  "MOTURI": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 40.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "ANGULU": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 110.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "24-01-2026"
+  },
+  "MURALI": {
+    "frequency": 4,
+    "debit_count": 2,
+    "credit_count": 2,
+    "total_debit": 440.0,
+    "total_credit": 1000.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "12-02-2026"
+  },
+  "ANNAPU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 860.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "25-01-2026"
+  },
+  "GRANDH": {
+    "frequency": 10,
+    "debit_count": 10,
+    "credit_count": 0,
+    "total_debit": 672.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "11-02-2026"
+  },
+  "AKASAM": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 90.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "YAMANA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "29-01-2026"
+  },
+  "AAKULA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-01-2026"
+  },
+  "PANASA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 92.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-01-2026"
+  },
+  "KRUPAN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-01-2026"
+  },
+  "SRI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-02-2026"
+  },
+  "KOTHW": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1300.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-02-2026"
+  },
+  "MUNGI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-02-2026"
+  },
+  "GUNDU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "03-02-2026"
+  },
+  "GLEMNA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 90446.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-02-2026"
+  },
+  "EF B AF15C7CEAB3": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 6.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-02-2026"
+  },
+  "N": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-02-2026"
+  },
+  "BENNET": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 5000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "06-02-2026"
+  },
+  "SPEEDC": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 57.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-02-2026"
+  },
+  "MATTAP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-02-2026"
+  },
+  "COFFEE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2062.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-02-2026"
+  },
+  "IBACO": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 400.8,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-02-2026"
+  },
+  "MARELL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-02-2026"
+  },
+  "NATHIPA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-02-2026"
+  },
+  "PANCHA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 110.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "12-02-2026"
+  },
+  "IIT": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 6014.16,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "16-02-2026"
+  },
+  "PAGADA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 110.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "14-02-2026"
+  },
+  "UPI AXI BB C CC8F": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 800.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "15-02-2026"
+  },
+  "ZIBE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2030.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "15-02-2026"
+  },
+  "1 50 00 42 07": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 44.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "06-02-2026"
+  },
+  "IBANOS": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "18-02-2026"
+  },
+  "LLOYD": {
+    "frequency": 26,
+    "debit_count": 24,
+    "credit_count": 2,
+    "total_debit": 3750.0,
+    "total_credit": 200.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "08-05-2026"
+  },
+  "BILLY": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 800.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "20-02-2026"
+  },
+  "SOFIOR": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 898.36,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "20-02-2026"
+  },
+  "ADAKA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 3000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "21-02-2026"
+  },
+  "UPI AXIE3C5AAF32A0A B3": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1600.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "21-02-2026"
+  },
+  "EWDELHIUPIN 21 02 26": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 2152.5,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "21-02-2026"
+  },
+  "PANASH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 70.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "22-02-2026"
+  },
+  "S V": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 148.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "22-02-2026"
+  },
+  "VI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 730.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "23-02-2026"
+  },
+  "UPI AXISWCD5E3A1C4E0D": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 2000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "23-02-2026"
+  },
+  "DIVINE": {
+    "frequency": 24,
+    "debit_count": 18,
+    "credit_count": 6,
+    "total_debit": 2564.0,
+    "total_credit": 1184.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "01-05-2026"
+  },
+  "APT": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1023.6,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "23-02-2026"
+  },
+  "2 00 13 94": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 112.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "04-02-2026"
+  },
+  "3D D91B54C CDBB72C09": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 22.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "24-02-2026"
+  },
+  "UPI AXI BE BE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 550.8,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "24-02-2026"
+  },
+  "CLIVE": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 10.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "MALVIN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "26-02-2026"
+  },
+  "DIBYA": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 6.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "FAC5B A5BBA45": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 18.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "08-02-2026"
+  },
+  "SUBASH": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 20.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "MAJJI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 74.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-03-2026"
+  },
+  "CHINNA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "04-03-2026"
+  },
+  "UPI AXI2E A05EE94CDABF": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "04-03-2026"
+  },
+  "TAKUDZ": {
+    "frequency": 8,
+    "debit_count": 4,
+    "credit_count": 4,
+    "total_debit": 700.0,
+    "total_credit": 610.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "10-05-2026"
+  },
+  "0 00 0 03": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 110.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-03-2026"
+  },
+  "SRINU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "06-03-2026"
+  },
+  "BATTUL": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "31-03-2026"
+  },
+  "JUTTHU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 120.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "13-03-2026"
+  },
+  "MAHESH": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 106.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "13-03-2026"
+  },
+  "TATEND": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 40.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "ADMIRE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 6000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "20-03-2026"
+  },
+  "B F0F0A72B CE D39": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 48.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "20-03-2026"
+  },
+  "DUMOL": {
+    "frequency": 4,
+    "debit_count": 2,
+    "credit_count": 2,
+    "total_debit": 1000.0,
+    "total_credit": 200.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "20-03-2026"
+  },
+  "BASISDUE DT 14": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 165.94,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "21-03-2026"
+  },
+  "UPI AXISWCBD9FEEE1CFEA4": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 400.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "21-03-2026"
+  },
+  "CASH B": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "23-03-2026"
+  },
+  "OMMI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "25-03-2026"
+  },
+  "UPI AXISWCDE0A8DA A5E0": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 400.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "26-03-2026"
+  },
+  "RAJESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 20.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-03-2026"
+  },
+  "ALCHI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "31-03-2026"
+  },
+  "BAKKA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "02-04-2026"
+  },
+  "UPI AXISWC4CEA FD": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 500.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "04-04-2026"
+  },
+  "ANUSUR": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 150.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "04-04-2026"
+  },
+  "DHUBAK": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 466.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "04-04-2026"
+  },
+  "PEKETI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 256.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-04-2026"
+  },
+  "KONDAP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-04-2026"
+  },
+  "SIMBAR": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1330.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "05-04-2026"
+  },
+  "6C43EA02DA F BFBD56": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 52.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-04-2026"
+  },
+  "PENUMA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 200.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "06-04-2026"
+  },
+  "UPI LITE": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 436.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "14-04-2026"
+  },
+  "PILLI": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 216.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "23-04-2026"
+  },
+  "KALIDIN": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 848.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-04-2026"
+  },
+  "PATNAIK": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 1576.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-04-2026"
+  },
+  "DONDAP": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "08-04-2026"
+  },
+  "BADDA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 80.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-04-2026"
+  },
+  "ENOCK": {
+    "frequency": 4,
+    "debit_count": 2,
+    "credit_count": 2,
+    "total_debit": 40.0,
+    "total_credit": 40.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "17-04-2026"
+  },
+  "E0B7A3ABDF EA6FD BC": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 52.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "18-04-2026"
+  },
+  "PRIDE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "23-04-2026"
+  },
+  "KUMILI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 480.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "24-04-2026"
+  },
+  "MAKE": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 100.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-05-2026"
+  },
+  "GANESH": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 52.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-05-2026"
+  },
+  "CHANDA": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 90.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-05-2026"
+  },
+  "SURAJ B": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 390.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "01-05-2026"
+  },
+  "SHEIK": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 144.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "UPI AXI2E2CC B0CB0": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 40.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "05-05-2026"
+  },
+  "SKILLDZI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 600.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "06-05-2026"
+  },
+  "PEDAGA": {
+    "frequency": 12,
+    "debit_count": 12,
+    "credit_count": 0,
+    "total_debit": 660.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 1.0,
+    "last_seen": "08-05-2026"
+  },
+  "NOOBIL": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 6000.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-05-2026"
+  },
+  "C51B1AE EBEEE20A2ADC": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 48.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "09-05-2026"
+  },
+  "KOSURI": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 78.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-05-2026"
+  },
+  "KILLAM": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 148.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-05-2026"
+  },
+  "KANTIPU": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 174.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": "09-05-2026"
+  },
+  "SVENSK": {
+    "frequency": 4,
+    "debit_count": 4,
+    "credit_count": 0,
+    "total_debit": 6536.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.8,
+    "last_seen": "09-05-2026"
+  },
+  "REYAZ": {
+    "frequency": 2,
+    "debit_count": 0,
+    "credit_count": 2,
+    "total_debit": 0.0,
+    "total_credit": 4000.0,
+    "known_categories": {},
+    "person_likelihood": 0.4,
+    "last_seen": ""
+  },
+  "E3EF1BB1C7B E75A99": {
+    "frequency": 2,
+    "debit_count": 2,
+    "credit_count": 0,
+    "total_debit": 8.0,
+    "total_credit": 0.0,
+    "known_categories": {},
+    "person_likelihood": 0.0,
+    "last_seen": "17-05-2026"
+  }
+}

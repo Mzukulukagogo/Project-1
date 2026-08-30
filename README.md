@@ -1,72 +1,142 @@
 # FinSight
 
-FinSight is a simple Flask app that analyses PDF bank statements and provides a spending summary, category breakdown, and recent transaction list.
+FinSight is a local-first Flask bank statement analyser. It combines document parsing with machine learning to classify transaction descriptions and detect unusual spending patterns.
 
-## Features
+## What changed in the ML version
 
-- Upload a PDF bank statement
-- Validate upload format and bank statement content
-- Show progress feedback during upload and processing
-- Categorise spending into groups such as Food, Transport, People/Transfers, Income, and more
-- Display totals for income, spending, and net position
-- Fixed footer branding on each page
+### 1. Transaction classification
+
+The original application used a hard-coded keyword map. The updated version keeps high-confidence rules for deterministic entities such as salary and fixed deposits, but adds:
+
+- TF-IDF text vectorisation
+- Logistic Regression classification
+- confidence scores
+- a local seed dataset
+- user corrections that become new training examples
+
+The classification pipeline is:
+
+`merchant description → text normalisation → TF-IDF → Logistic Regression → category + confidence`
+
+If scikit-learn is unavailable, FinSight falls back to a small local
+token-similarity classifier so the Flask app can still import and basic
+analysis can continue. The fallback is a resilience path, not the preferred
+model.
+
+### 2. Human-in-the-loop learning
+
+Every transaction has a correction control. When a user selects the correct category, FinSight stores that labelled example in `models/feedback.json` and retrains the classifier locally.
+
+No transaction data is sent to an external service.
+
+Feedback is also stored as entity-level category votes in
+`models/entity_profiles.json`, so correcting one UPI recipient can influence
+future noisy descriptions of the same recipient.
+
+### 3. Entity-aware classification
+
+FinSight separates short-lived statement behaviour from persisted learning:
+
+- current statement entity frequency is computed fresh for each analysis
+- repeated unknown UPI recipients can be treated as peer transfers
+- one-off or two-off small unknown UPI debits can be treated as likely local transport
+- persisted entity profiles contribute only explicit user-learned category votes
+
+This avoids the earlier failure mode where refreshing the results page inflated
+entity frequencies and changed later classifications.
+
+### 4. Anomaly detection
+
+Isolation Forest is applied to debit transactions when there are at least 10 of them.
+
+The model uses:
+
+- transaction amount
+- day of month
+- day of week
+- account balance
+
+A transaction marked `ANOMALY` should be treated as a review signal, not proof of fraud.
+
+### 5. PDF and CSV parsing improvements
+
+The parser retains the original backward-scanning idea but adds:
+
+- multiple date formats
+- more tolerant amount parsing
+- broader transaction prefixes
+- stopping at the previous transaction date while scanning backwards
+- duplicate protection
+- safer merchant extraction
+- tolerant CSV column names
+- CSV credit/debit support
+
+## Privacy
+
+The ML inference and training are local Python operations. Uploaded statements are stored temporarily under `uploads/`, and the classifier is stored under `models/`.
+
+The application does use CDN-hosted JavaScript on the results page and external Google Fonts in the original version. The financial data itself is not sent to those services by the application.
+
+For a fully offline deployment, replace Chart.js with a local copy and remove external fonts.
 
 ## Requirements
 
-- Python 3.11+ (tested with Python 3.14)
-- Flask
-- pdfplumber
+Python 3.11+ is recommended.
 
-## Setup
+Install:
 
-1. Clone the repository:
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+pip install flask pdfplumber scikit-learn numpy
+```
 
-   ```bash
-   git clone https://github.com/Mzukulukagogo/Project-1.git
-   cd Project-1
-   ```
+Optional for the existing test suite: no external test runner is required.
 
-2. Create and activate a virtual environment:
-
-   ```powershell
-   python -m venv venv
-   .\venv\Scripts\Activate.ps1
-   ```
-
-3. Install required packages:
-
-   ```powershell
-   pip install flask pdfplumber
-   ```
-
-## Running the app
+## Run
 
 ```powershell
 python app.py
 ```
 
-Then open a browser to `http://127.0.0.1:5000`.
+Open:
 
-## Usage
+`http://127.0.0.1:5000`
 
-- Select a PDF bank statement from the upload form
-- Watch the progress indicator show file selection, upload, and parsing
-- View the analysis results page with spending summary and transaction details
+## Test
+
+```powershell
+python -m unittest discover -s tests
+```
 
 ## Project structure
 
-- `app.py` — Flask application routes and upload handling
-- `parser.py` — PDF parsing logic to extract transactions
-- `categoriser.py` — Category mapping and summary generation
-- `templates/` — HTML templates for the upload page and results page
-- `uploads/` — Temporary uploaded files (ignored by Git)
+```text
+FinSight/
+├── app.py
+├── parser.py
+├── categoriser.py
+├── templates/
+│   ├── index.html
+│   └── results.html
+├── models/
+│   ├── transaction_classifier.pkl
+│   └── feedback.json
+└── uploads/
+```
 
-## Notes
+`models/` and `uploads/` should be added to `.gitignore`.
 
-- Only PDF uploads are accepted.
-- If the PDF cannot be parsed as a bank statement, the app returns a friendly error message.
-- The app currently uses a hard-coded category map and may require adjustments for new merchant text patterns.
+## Important limitation
+
+The initial classifier is trained on a small curated seed dataset because the project does not ship with a large labelled bank transaction corpus. Therefore, its confidence and generalisation should not be presented as production-grade.
+
+The strongest way to improve it is to collect more labelled transaction descriptions from the user's own statements and corrections.
+
+## Oral-exam explanation
+
+> FinSight originally relied on keyword matching to categorise transactions. I replaced the general classification part with a supervised NLP pipeline. Transaction descriptions are normalised and converted into TF-IDF vectors, then Logistic Regression predicts the spending category. I also expose the model confidence and allow the user to correct predictions, creating a human-in-the-loop feedback loop. Separately, I use Isolation Forest as an unsupervised anomaly detector to flag transactions that differ from the normal spending pattern. The entire ML pipeline runs locally, which is important because bank statements contain sensitive financial information.
 
 ## License
 
-This project is open for modification and personal use. Feel free to adapt it to your own bank statement format.
+This project is for educational and personal use.

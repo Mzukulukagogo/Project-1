@@ -1,399 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FinSight — Results</title>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>FinSight — Financial Intelligence</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  :root {
-    --bg: #0a0e17;
-    --surface: #111827;
-    --border: #1f2937;
-    --gold: #f59e0b;
-    --green: #10b981;
-    --red: #ef4444;
-    --text: #f9fafb;
-    --muted: #6b7280;
-  }
-
-  body {
-    background: var(--bg);
-    color: var(--text);
-    font-family: 'Syne', sans-serif;
-    min-height: 100vh;
-    padding: 2rem;
-  }
-
-  .bg-grid {
-    position: fixed;
-    inset: 0;
-    background-image: 
-      linear-gradient(rgba(245,158,11,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(245,158,11,0.03) 1px, transparent 1px);
-    background-size: 60px 60px;
-    pointer-events: none;
-  }
-
-  .page {
-    position: relative;
-    z-index: 1;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 2.5rem;
-    padding-bottom: 1.5rem;
-    border-bottom: 1px solid var(--border);
-  }
-
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    background: linear-gradient(135deg, #fff 0%, #f59e0b 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .back-btn {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    color: var(--muted);
-    padding: 0.5rem 1.2rem;
-    border-radius: 0.4rem;
-    font-family: 'Syne', sans-serif;
-    font-size: 0.85rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 0.2s;
-  }
-
-  .back-btn:hover { color: var(--text); border-color: var(--gold); }
-
-  .summary-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .summary-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-  }
-
-  .summary-card .label {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    color: var(--muted);
-    text-transform: uppercase;
-    margin-bottom: 0.75rem;
-  }
-
-  .summary-card .amount {
-    font-family: 'DM Mono', monospace;
-    font-size: 1.6rem;
-    font-weight: 500;
-  }
-
-  .amount.green { color: var(--green); }
-  .amount.red { color: var(--red); }
-  .amount.gold { color: var(--gold); }
-
-  .section-title {
-    font-size: 1rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-bottom: 1rem;
-    font-family: 'DM Mono', monospace;
-    font-size: 0.75rem;
-  }
-
-  .categories {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-    overflow: hidden;
-    margin-bottom: 2rem;
-  }
-
-  .category-row {
-    display: grid;
-    grid-template-columns: 1fr auto auto;
-    align-items: center;
-    gap: 1rem;
-    padding: 1rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    transition: background 0.15s;
-  }
-
-  .category-row:last-child { border-bottom: none; }
-  .category-row:hover { background: rgba(255,255,255,0.02); }
-
-  .cat-name {
-    font-weight: 600;
-    font-size: 0.95rem;
-  }
-
-  .cat-bar-wrap {
-    width: 160px;
-    height: 4px;
-    background: var(--border);
-    border-radius: 2px;
-    overflow: hidden;
-  }
-
-  .cat-bar {
-    height: 100%;
-    background: var(--gold);
-    border-radius: 2px;
-  }
-
-  .cat-amount {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.9rem;
-    color: var(--red);
-    text-align: right;
-    min-width: 100px;
-  }
-
-  .transactions {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-    overflow: hidden;
-  }
-
-  .txn-row {
-    display: grid;
-    grid-template-columns: 100px 1fr auto auto;
-    gap: 1rem;
-    align-items: center;
-    padding: 0.9rem 1.5rem;
-    border-bottom: 1px solid var(--border);
-    transition: background 0.15s;
-  }
-
-  .txn-row:last-child { border-bottom: none; }
-  .txn-row:hover { background: rgba(255,255,255,0.02); }
-
-  .txn-date {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.78rem;
-    color: var(--muted);
-  }
-
-  .txn-merchant {
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-
-  .txn-category {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.7rem;
-    color: var(--muted);
-    background: var(--border);
-    padding: 0.2rem 0.6rem;
-    border-radius: 1rem;
-  }
-
-  .txn-amount {
-    font-family: 'DM Mono', monospace;
-    font-size: 0.9rem;
-    text-align: right;
-    min-width: 90px;
-  }
-
-  .txn-amount.credit { color: var(--green); }
-  .txn-amount.debit { color: var(--red); }
-
-  .insights-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-  .insights-card,
-  .chart-card {
-    background: var(--surface);
-    border: 1px solid var(--border);
-    border-radius: 0.75rem;
-    padding: 1.5rem;
-  }
-
-  .insights-card p {
-    color: var(--text);
-    line-height: 1.7;
-    margin-bottom: 0.8rem;
-  }
-
-  .chart-container {
-    width: 100%;
-    min-height: 260px;
-  }
-
-  .footer {
-    position: fixed;
-    bottom: 1rem;
-    left: 0;
-    right: 0;
-    text-align: center;
-    color: rgba(249,250,251,0.7);
-    font-size: 0.85rem;
-    font-family: 'DM Mono', monospace;
-    pointer-events: none;
-  }
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+ --bg:#080b12;--surface:#101621;--surface2:#151c29;--border:#263142;
+ --text:#f7f8fa;--muted:#8d99aa;--gold:#f59e0b;--green:#10b981;--red:#ef4444;
+ --blue:#60a5fa;--shadow:0 12px 32px rgba(0,0,0,.18)
+}
+html[data-theme="light"]{
+ --bg:#f4f6f9;--surface:#fff;--surface2:#f8fafc;--border:#dce2ea;
+ --text:#111827;--muted:#667085;--gold:#b45309;--green:#047857;--red:#dc2626;
+ --blue:#2563eb;--shadow:0 8px 24px rgba(15,23,42,.07)
+}
+body{background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh;line-height:1.5}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.35;background-image:linear-gradient(rgba(148,163,184,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(148,163,184,.035) 1px,transparent 1px);background-size:56px 56px}
+.page{position:relative;z-index:1;max-width:1180px;margin:auto;padding:34px 28px 70px}
+header{display:flex;align-items:center;justify-content:space-between;padding-bottom:22px;border-bottom:1px solid var(--border);margin-bottom:28px}
+.brand{display:flex;align-items:center;gap:12px}.mark{width:36px;height:36px;border-radius:9px;background:var(--gold);display:grid;place-items:center;color:#111;font-weight:900}.logo{font-size:24px;font-weight:800;letter-spacing:-.04em}.tag{font:12px ui-monospace,SFMono-Regular,monospace;color:var(--muted);margin-top:2px}
+.header-actions{display:flex;gap:10px}.button{display:inline-flex;align-items:center;gap:7px;text-decoration:none;background:var(--surface);border:1px solid var(--border);color:var(--text);padding:9px 13px;border-radius:8px;font-size:13px;cursor:pointer}.button:hover{border-color:var(--gold)}
+.section{margin-top:30px}.section-heading{display:flex;align-items:end;justify-content:space-between;margin-bottom:13px}.eyebrow{font:12px ui-monospace,SFMono-Regular,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.section-heading h2{font-size:20px;letter-spacing:-.025em;margin-top:3px}.section-note{font-size:12px;color:var(--muted)}
+.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:var(--surface);border:1px solid var(--border);border-radius:12px;box-shadow:var(--shadow)}
+.metric{padding:19px 20px}.metric-label{font-size:12px;color:var(--muted);margin-bottom:9px}.metric-value{font:600 25px ui-monospace,SFMono-Regular,monospace;letter-spacing:-.04em}.income{color:var(--green)}.expense{color:var(--red)}.net{color:var(--gold)}.anomaly{color:var(--red)}
+.chart-card{padding:20px 22px}.chart-wrap{height:410px;position:relative}
+.analysis-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:14px}
+.breakdown,.insights,.ml-card{padding:20px}
+.category-row{display:grid;grid-template-columns:170px 1fr 105px;gap:14px;align-items:center;padding:13px 0;border-bottom:1px solid var(--border)}.category-row:last-child{border-bottom:0}.category-name{font-size:14px;font-weight:600}.bar-track{height:8px;border-radius:5px;background:var(--border);overflow:hidden}.bar-fill{height:100%;background:var(--gold);border-radius:5px}.category-amount{font:13px ui-monospace,monospace;text-align:right;color:var(--red)}
+.insights p{font-size:14px;padding:12px 0;border-bottom:1px solid var(--border)}.insights p:last-child{border:0}
+.ml-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}.ml-stat{background:var(--surface2);border:1px solid var(--border);border-radius:9px;padding:15px}.ml-stat strong{display:block;font:600 22px ui-monospace,monospace;margin-bottom:3px}.ml-stat span{font-size:12px;color:var(--muted)}
+.privacy{margin-top:12px;font-size:12px;color:var(--green)}
+.transactions{overflow:hidden}.table-head,.txn-row{display:grid;grid-template-columns:105px minmax(200px,1fr) 155px 85px 95px;gap:14px;align-items:center;padding:13px 18px}.table-head{background:var(--surface2);color:var(--muted);font:11px ui-monospace,monospace;text-transform:uppercase;letter-spacing:.06em}.txn-row{border-top:1px solid var(--border);min-height:70px}.txn-date,.confidence{font:12px ui-monospace,monospace;color:var(--muted)}.txn-merchant{font-size:14px;font-weight:650}.txn-category{font-size:12px;color:var(--muted)}.txn-category .source{display:block;font:10px ui-monospace,monospace;margin-top:2px;color:var(--blue)}.status{font-size:12px}.status.normal{color:var(--muted)}.status.flag{color:var(--red);font-weight:700}
+.feedback{margin-top:5px;display:flex;gap:5px}.feedback select,.feedback button{background:var(--bg);color:var(--text);border:1px solid var(--border);border-radius:5px;padding:4px 6px;font-size:10px}.feedback button{cursor:pointer}.feedback button:hover{border-color:var(--gold)}
+.pagination{display:flex;justify-content:space-between;align-items:center;margin-top:14px}.muted{color:var(--muted);font:12px ui-monospace,monospace}
+.empty{padding:30px;text-align:center;color:var(--muted);font-size:14px}
+.footer{text-align:center;margin-top:35px;color:var(--muted);font:11px ui-monospace,monospace}
+@media(max-width:900px){.overview{grid-template-columns:repeat(2,1fr)}.analysis-grid{grid-template-columns:1fr}.chart-wrap{height:350px}.table-head{display:none}.txn-row{grid-template-columns:85px 1fr auto;gap:10px}.txn-category,.confidence{display:none}}
+@media(max-width:600px){.page{padding:20px 14px 50px}header{align-items:flex-start}.tag{display:none}.overview{grid-template-columns:1fr 1fr}.metric-value{font-size:19px}.chart-wrap{height:290px}.category-row{grid-template-columns:1fr auto}.bar-track{grid-column:1/-1}.ml-grid{grid-template-columns:1fr}.header-actions .theme-label{display:none}.txn-row{grid-template-columns:70px 1fr}.status{display:none}}
 </style>
 </head>
 <body>
-<div class="bg-grid"></div>
 <div class="page">
+<header>
+ <div class="brand"><div class="mark">F</div><div><div class="logo">FinSight</div><div class="tag">LOCAL FINANCIAL INTELLIGENCE</div></div></div>
+ <div class="header-actions"><button class="button" id="themeToggle" type="button">◐ <span class="theme-label">Dark mode</span></button><a class="button" href="/">＋ New analysis</a></div>
+</header>
 
-  <header>
-    <div class="logo">FinSight</div>
-    <a href="/" class="back-btn">← New Analysis</a>
-  </header>
+<section class="section" style="margin-top:0">
+ <div class="section-heading"><div><div class="eyebrow">01 · Overview</div><h2>Financial position</h2></div></div>
+ <div class="overview">
+  <div class="card metric"><div class="metric-label">Money in</div><div class="metric-value income">₹{{ "{:,.0f}".format(result.total_income) }}</div></div>
+  <div class="card metric"><div class="metric-label">Money out</div><div class="metric-value expense">₹{{ "{:,.0f}".format(result.total_spent) }}</div></div>
+  <div class="card metric"><div class="metric-label">Net position</div><div class="metric-value net">₹{{ "{:,.0f}".format(result.total_income-result.total_spent) }}</div></div>
+  <div class="card metric"><div class="metric-label">Unusual transactions</div><div class="metric-value anomaly">{{ result.anomaly_count }}</div></div>
+ </div>
+</section>
 
-  <div class="summary-grid">
-    <div class="summary-card">
-      <div class="label">Total Money In</div>
-      <div class="amount green">₹{{ "{:,.0f}".format(result.total_income) }}</div>
-    </div>
-    <div class="summary-card">
-      <div class="label">Total Money Out</div>
-      <div class="amount red">₹{{ "{:,.0f}".format(result.total_spent) }}</div>
-    </div>
-    <div class="summary-card">
-      <div class="label">Net Position</div>
-      <div class="amount gold">₹{{ "{:,.0f}".format(result.total_income - result.total_spent) }}</div>
-    </div>
+<section class="section">
+ <div class="section-heading"><div><div class="eyebrow">02 · Trend</div><h2>Spending over time</h2></div><div class="section-note">Daily debit activity</div></div>
+ <div class="card chart-card"><div class="chart-wrap"><canvas id="spendingTrendChart"></canvas></div></div>
+</section>
+
+<section class="section">
+ <div class="section-heading"><div><div class="eyebrow">03 · Breakdown</div><h2>Where your money went</h2></div></div>
+ <div class="analysis-grid">
+  <div class="card breakdown">
+   {% set max_val = result.by_category.values() | max if result.by_category else 1 %}
+   {% for category,amount in result.by_category.items() %}
+   <div class="category-row"><div class="category-name">{{ category }}</div><div class="bar-track"><div class="bar-fill" style="width:{{ ((amount/max_val)*100)|int }}%"></div></div><div class="category-amount">−₹{{ "{:,.0f}".format(amount) }}</div></div>
+   {% else %}<div class="empty">No spending categories found.</div>{% endfor %}
   </div>
+  <div class="card insights"><div class="eyebrow">Analysis</div>{% for point in result.behavior_points %}<p>{{ point }}</p>{% else %}<p>No additional insights available.</p>{% endfor %}</div>
+ </div>
+</section>
 
-  <div class="insights-grid">
-    <div class="insights-card">
-      <div class="section-title">Spending insights</div>
-      {% for point in result.behavior_points %}
-      <p>{{ point }}</p>
-      {% endfor %}
-    </div>
-    <div class="chart-card">
-      <div class="section-title">Spending over time</div>
-      <div class="chart-container">
-        <canvas id="spendingTrendChart"></canvas>
-      </div>
-    </div>
+<section class="section">
+ <div class="section-heading"><div><div class="eyebrow">04 · Machine learning</div><h2>Local model activity</h2></div><div class="section-note">No cloud inference</div></div>
+ <div class="card ml-card">
+  <div class="ml-grid">
+   <div class="ml-stat"><strong>{{ result.ml_classifications }}</strong><span>ML classifications</span></div>
+   <div class="ml-stat"><strong>{{ result.rule_classifications }}</strong><span>Rule classifications</span></div>
+   <div class="ml-stat"><strong>{{ result.entity_classifications }}</strong><span>Entity-frequency decisions</span></div>
+   <div class="ml-stat"><strong>{{ result.feedback_classifications }}</strong><span>Feedback/profile decisions</span></div>
+   <div class="ml-stat"><strong>{{ result.anomaly_count }}</strong><span>Isolation Forest flags</span></div>
   </div>
+  <div class="privacy">● Classification and anomaly detection run locally on this device.</div>
+ </div>
+</section>
 
-  <div class="section-title">Spending by Category</div>
-  <div class="categories">
-    {% set max_val = result.by_category.values() | max %}
-    {% for category, amount in result.by_category.items() %}
-    <div class="category-row">
-      <div class="cat-name">{{ category }}</div>
-      <div class="cat-bar-wrap">
-        <div class="cat-bar" style="width: {{ (amount / max_val * 100) | int }}%"></div>
-      </div>
-      <div class="cat-amount">−₹{{ "{:,.0f}".format(amount) }}</div>
-    </div>
-    {% endfor %}
-  </div>
-
-<div class="section-title">Recent Transactions</div>
-<div class="transactions">
+<section class="section">
+ <div class="section-heading"><div><div class="eyebrow">05 · Transactions</div><h2>Transaction ledger</h2></div><div class="section-note">Correct a prediction to retrain the local classifier</div></div>
+ <div class="card transactions">
+  <div class="table-head"><div>Date</div><div>Merchant</div><div>Category</div><div>Confidence</div><div>Status</div></div>
   {% for t in transactions %}
   <div class="txn-row">
-    <div class="txn-date">{{ t.date }}</div>
+   <div class="txn-date">{{ t.date }}</div>
+   <div>
     <div class="txn-merchant">{{ t.merchant }}</div>
-    <div class="txn-category">{{ t.category }}</div>
-    {% if t.deposit > 0 %}
-    <div class="txn-amount credit">+₹{{ "{:,.0f}".format(t.deposit) }}</div>
-    {% else %}
-    <div class="txn-amount debit">−₹{{ "{:,.0f}".format(t.withdrawal) }}</div>
-    {% endif %}
+    <form class="feedback" method="post" action="/feedback">
+     <input type="hidden" name="merchant" value="{{ t.merchant }}"><input type="hidden" name="page" value="{{ page }}">
+     <select name="category" aria-label="Correct category"><option value="" selected>Correct…</option>
+     {% for cat in ["Food & Dining","Travel & Transport","Entertainment","Shopping","Subscriptions","Education","Healthcare","Peer Transfers","Income","Savings","Utilities","Other"] %}<option value="{{ cat }}">{{ cat }}</option>{% endfor %}
+     </select><button type="submit">Learn</button>
+    </form>
+   </div>
+   <div class="txn-category">{{ t.category }}<span class="source">{{ t.classification_label|default("Classifier") }}</span></div>
+   <div class="confidence">{{ (t.category_confidence*100)|round(0) }}%</div>
+   <div class="status {% if t.is_anomaly %}flag{% else %}normal{% endif %}">{% if t.is_anomaly %}⚠ Unusual{% else %}Normal{% endif %}</div>
   </div>
-  {% endfor %}
+  {% else %}<div class="empty">No transactions found.</div>{% endfor %}
+ </div>
+ {% if total_pages > 1 %}
+ <div class="pagination">{% if page>1 %}<a class="button" href="/results?page={{ page-1 }}">← Previous</a>{% else %}<span></span>{% endif %}<span class="muted">Page {{ page }} of {{ total_pages }}</span>{% if page<total_pages %}<a class="button" href="/results?page={{ page+1 }}">Next →</a>{% else %}<span></span>{% endif %}</div>
+ {% endif %}
+</section>
+<div class="footer">FinSight · privacy-first financial analytics</div>
 </div>
 
-{% if page > 1 or transactions|length == 20 %}
-<div style="display:flex; justify-content:space-between; align-items:center; margin-top:1.5rem; padding-bottom:3rem;">
-  {% if page > 1 %}
-  <a href="/results?page={{ page - 1 }}" class="back-btn">← Previous</a>
-  {% else %}
-  <span></span>
-  {% endif %}
-
-  <span style="font-family:'DM Mono',monospace; font-size:0.8rem; color:var(--muted);">
-    Page {{ page }}
-  </span>
-
-  {% if transactions|length == 20 %}
-  <a href="/results?page={{ page + 1 }}" class="back-btn">Next →</a>
-  {% else %}
-  <span></span>
-  {% endif %}
-</div>
-{% endif %}
-  </div>
-
-</div>
-<div class="footer">Anesu Masango</div>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const labels = {{ result.trend_dates | default([], true) | tojson | safe }};
-  const values = {{ result.trend_amounts | default([], true) | tojson | safe }};
-
-  const ctx = document.getElementById('spendingTrendChart');
-  if (ctx && labels && labels.length) {
-    new Chart(ctx, {
-      type: 'line',
-      data: {
-        labels,
-        datasets: [{
-          label: 'Daily spending',
-          data: values,
-          borderColor: '#f59e0b',
-          backgroundColor: 'rgba(245,158,11,0.18)',
-          fill: true,
-          tension: 0.3,
-          pointRadius: 3,
-          pointBackgroundColor: '#f59e0b',
-          pointBorderColor: '#fff'
-        }]
-      },
-      options: {
-        responsive: true,
-        maintainAspectRatio: false,
-        scales: {
-          y: {
-            beginAtZero: true,
-            ticks: { color: '#cbd5e1' },
-            grid: { color: 'rgba(255,255,255,0.08)' }
-          },
-          x: {
-            ticks: { color: '#cbd5e1' },
-            grid: { display: false }
-          }
-        },
-        plugins: {
-          legend: { labels: { color: '#f9fafb' } },
-          tooltip: { enabled: true }
-        }
-      }
-    });
-  }
+const root=document.documentElement, toggle=document.getElementById("themeToggle");
+const saved=localStorage.getItem("finsight-theme")||"dark";
+root.dataset.theme=saved;
+function updateThemeButton(){toggle.innerHTML=(root.dataset.theme==="dark"?"◐ <span class='theme-label'>Dark mode</span>":"☀ <span class='theme-label'>Light mode</span>");}
+updateThemeButton();
+toggle.addEventListener("click",()=>{root.dataset.theme=root.dataset.theme==="dark"?"light":"dark";localStorage.setItem("finsight-theme",root.dataset.theme);updateThemeButton();});
+const labels={{ result.trend_dates|default([],true)|tojson|safe }};
+const values={{ result.trend_amounts|default([],true)|tojson|safe }};
+const ctx=document.getElementById("spendingTrendChart");
+if(ctx&&labels.length){
+ new Chart(ctx,{type:"line",data:{labels:labels,datasets:[{label:"Daily spending",data:values,fill:true,tension:.35,borderWidth:2,pointRadius:2,pointHoverRadius:5}]},
+ options:{responsive:true,maintainAspectRatio:false,interaction:{intersect:false,mode:"index"},
+ scales:{y:{beginAtZero:true,title:{display:true,text:"Spending (₹)"},ticks:{callback:v=>"₹"+Number(v).toLocaleString("en-IN")},grid:{color:"rgba(148,163,184,.14)"}},x:{grid:{display:false},ticks:{maxRotation:0,autoSkip:true,maxTicksLimit:12}}},
+ plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>" ₹"+Number(c.parsed.y).toLocaleString("en-IN")}}}}
+ });
+}
 </script>
 </body>
 </html>

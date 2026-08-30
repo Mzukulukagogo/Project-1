@@ -1,73 +1,122 @@
 import os
+import uuid
 from flask import Flask, render_template, request, redirect, url_for
+from werkzeug.utils import secure_filename
+
 from parser import parse_statement, parse_csv
-from categoriser import summarise
+from categoriser import CATEGORY_OPTIONS, summarise, record_feedback
 
 app = Flask(__name__)
-app.config['UPLOAD_FOLDER'] = 'uploads'
-os.makedirs('uploads', exist_ok=True)
+app.config["UPLOAD_FOLDER"] = os.path.join(os.path.dirname(__file__), "uploads")
+app.config["MAX_CONTENT_LENGTH"] = 10 * 1024 * 1024  # 10 MB
+os.makedirs(app.config["UPLOAD_FOLDER"], exist_ok=True)
 
-@app.route('/')
+ALLOWED_EXTENSIONS = {".pdf", ".csv"}
+
+
+def allowed_file(filename):
+    return os.path.splitext(filename.lower())[1] in ALLOWED_EXTENSIONS
+
+
+def parse_uploaded_file(filepath, extension):
+    if extension == ".pdf":
+        return parse_statement(filepath)
+    with open(filepath, "rb") as handle:
+        return parse_csv(handle)
+
+
+@app.route("/")
 def index():
-    return render_template('index.html', error=None)
+    return render_template("index.html", error=None)
 
-@app.route('/upload', methods=['POST'])
+
+@app.route("/upload", methods=["POST"])
 def upload():
-    if 'statement' not in request.files:
-        return render_template('index.html', error='No file uploaded.')
-    
-    file = request.files['statement']
-    if file.filename == '' or not (file.filename.lower().endswith('.pdf') or file.filename.lower().endswith('.csv')):
-        return render_template('index.html', error='Please upload a PDF or CSV file.')
-    
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], 'statement.pdf')
+    if "statement" not in request.files:
+        return render_template("index.html", error="No file uploaded.")
+
+    file = request.files["statement"]
+    original_name = secure_filename(file.filename or "")
+
+    if not original_name:
+        return render_template("index.html", error="Please choose a file.")
+
+    extension = os.path.splitext(original_name.lower())[1]
+    if extension not in ALLOWED_EXTENSIONS:
+        return render_template("index.html", error="Please upload a PDF or CSV file.")
+
+    # Use a unique filename so separate uploads cannot overwrite each other.
+    stored_name = f"{uuid.uuid4().hex}{extension}"
+    filepath = os.path.join(app.config["UPLOAD_FOLDER"], stored_name)
     file.save(filepath)
-    
-    if file.filename.lower().endswith('.pdf'):
-        transactions = parse_statement(filepath)
-    else:
-        file.stream.seek(0)
-        transactions = parse_csv(file)
+
+    try:
+        transactions = parse_uploaded_file(filepath, extension)
+    except Exception as exc:
+        app.logger.exception("Statement parsing failed")
+        return render_template(
+            "index.html",
+            error=f"Could not parse the statement: {exc}",
+        )
+
     if not transactions:
-        return render_template('index.html', error='No transactions found. Please upload a valid bank statement PDF.')
-    
-    result = summarise(transactions)
+        return render_template(
+            "index.html",
+            error="No transactions found. Please upload a valid bank statement.",
+        )
 
-    # PAGINATION
-    page = int(request.args.get('page', 1))
-    per_page = 20
+    # Keep the current upload available for the /results route.
+    app.config["CURRENT_FILE"] = filepath
+    app.config["CURRENT_EXTENSION"] = extension
 
-    start = (page - 1) * per_page
-    end = start + per_page
+    return redirect(url_for("results", page=1))
 
-    paginated_transactions = result['transactions'][start:end]
 
-    return render_template(
-        'results.html',
-        result=result,
-        transactions=paginated_transactions,
-        page=page
-    )
-@app.route('/results')
+@app.post("/feedback")
+def feedback():
+    merchant = request.form.get("merchant", "").strip()
+    category = request.form.get("category", "").strip()
+    if merchant and category:
+        record_feedback(merchant, category)
+
+    return redirect(url_for("results", page=request.form.get("page", 1)))
+
+
+@app.route("/results")
 def results():
-    filepath = os.path.join(app.config['UPLOAD_FOLDER'], 'statement.pdf')
-    if not os.path.exists(filepath):
-        return redirect(url_for('index'))
+    filepath = app.config.get("CURRENT_FILE")
+    extension = app.config.get("CURRENT_EXTENSION")
 
-    transactions = parse_statement(filepath)
-    result = summarise(transactions)
+    if not filepath or not os.path.exists(filepath):
+        return redirect(url_for("index"))
 
-    page = int(request.args.get('page', 1))
+    try:
+        transactions = parse_uploaded_file(filepath, extension)
+        result = summarise(transactions)
+    except Exception as exc:
+        app.logger.exception("Result generation failed")
+        return render_template("index.html", error=f"Could not analyse the statement: {exc}")
+
+    try:
+        page = max(1, int(request.args.get("page", 1)))
+    except ValueError:
+        page = 1
+
     per_page = 20
     start = (page - 1) * per_page
-    end = start + per_page
-    paginated_transactions = result['transactions'][start:end]
+    paginated_transactions = result["transactions"][start:start + per_page]
+
+    total_pages = max(1, (len(result["transactions"]) + per_page - 1) // per_page)
 
     return render_template(
-        'results.html',
+        "results.html",
         result=result,
         transactions=paginated_transactions,
-        page=page
+        page=page,
+        total_pages=total_pages,
+        category_options=CATEGORY_OPTIONS,
     )
-if __name__ == '__main__':
+
+
+if __name__ == "__main__":
     app.run(debug=True)
