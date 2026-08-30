@@ -133,9 +133,6 @@ The initial classifier is trained on a small curated seed dataset because the pr
 
 The strongest way to improve it is to collect more labelled transaction descriptions from the user's own statements and corrections.
 
-## Oral-exam explanation
-
-> FinSight originally relied on keyword matching to categorise transactions. I replaced the general classification part with a supervised NLP pipeline. Transaction descriptions are normalised and converted into TF-IDF vectors, then Logistic Regression predicts the spending category. I also expose the model confidence and allow the user to correct predictions, creating a human-in-the-loop feedback loop. Separately, I use Isolation Forest as an unsupervised anomaly detector to flag transactions that differ from the normal spending pattern. The entire ML pipeline runs locally, which is important because bank statements contain sensitive financial information.
 
 ## License
 
